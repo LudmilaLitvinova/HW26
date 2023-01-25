@@ -32,9 +32,8 @@ public class CustomStudentRepositoryImpl implements CustomStudentRepository {
 
     @Override
     public Student getStudentById(Integer id) {
-        ;
         Student student;
-        log.info("call findLikeEmail");
+        log.info("call findLikeId");
         Query query = entityManager
                 .createQuery("select s from Student s where s.id = " + id);
         try {
